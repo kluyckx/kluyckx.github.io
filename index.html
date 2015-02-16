@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<head>
+
+  <title>Kim Luyckx</title>
+<style>
+  body {
+    background: url("img/concrete.jpg");
+  }
+  .section {
+  	clear: both;
+/*  	padding: 0px;*/
+/*  	margin: 0px;*/
+  	height: 140px;
+  }
+  
+/*  COLUMN SETUP  */
+  .col {
+  	display: block;
+  	float: left;
+  	margin: 1% 0 1% 1.6%;
+  	border-radius: 10px;
+  	background: grey;
+  	padding: 5 5 5 5;
+  	height: 140px;
+  	color: #ffff87;
+  }
+  .col:first-child { margin-left: 0; }
+  
+  /*  GROUPING  */
+  .group:before,
+  .group:after { content:""; display:table; }
+  .group:after { clear:both;}
+  .group { zoom:1; /* For IE 6/7 */ }
+  /*  GRID OF THREE  */
+  .span_3_of_3 { width: 90%; }
+  .span_2_of_3 { width: 60%; }
+  .span_1_of_3 { width: 30%; }
+
+  /*  GO FULL WIDTH BELOW 480 PIXELS */
+  @media only screen and (max-width: 480px) {
+  	.col {  margin: 1% 0 1% 0%; }
+  	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+  } 
+</style>
+</head>
+<body>
+	Website under construction !!! Check <a href="http://www.clips.uantwerpen.be/~kim">my current website</a>
+  <img src="img/concrete.jpg" height="42" width="42">
+  <div class="section group">
+	<div class="col span_1_of_3">
+
+  About me
+	</div>
+	<div class="col span_1_of_3">
+  Publications
+	</div>
+	<div class="col span_1_of_3">
+  Presentations
+  </div>
+</div>
+<div class="section group">
+	<div class="col span_1_of_3">
+  Projects
+	</div>
+	<div class="col span_1_of_3">
+  Activities
+	</div>
+	<div class="col span_1_of_3">
+  Contact
+  </div>
+</div>
+<div class="section group">
+	<div class="col span_1_of_3">
+  LinkedIn
+	</div>
+	<div class="col span_1_of_3">
+  Twitter
+	</div>
+	<div class="col span_1_of_3">
+  Google Scholar
+  </div>
+</div>
+</body>
