@@ -1,0 +1,182 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="description" content="test">  <title>Kim Luyckx: PhD dissertation</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta name="description" content="Scalability Issues in Authorship Attribution Kim Luyckx PhD defense  7 December 2010 Promotor: Walter Daelemans Inleiding Schrijfstijl Aannames identiteit heeft directe invloed op schrijfstijl analyse van je schrijfsels laat ons toe jou te identificeren Identiteit = leeftijd, gender, persoonlijkheid, opleidingsniveau, ideologie, emoties, ... “Schrijfstijl is kwantificeerbaar” Onbewuste elementen in schrijfstijl Toepassingen analyse van literaire stijl betwist auteurschap detectie van plagiaat forensische toepassingen: auteurschap van dreigbrieven, frauduleuze e-mails, bekentenissen, ... Stylometrie Auteursherkenning ‘Klassieke’ toepassingen ➟ diepgaande analyse door literaire experts “Identificeer de auteur van een tekst, op basis van een verzameling teksten door potentiële auteurs Auteursherkenning Informatiestroom ➟ automatische analyse van schrijfstijl: sneller &amp; nieuwe inzichten “Identificeer de auteur van een tekst, op basis van een verzameling teksten door potentiële auteurs Automatische grammaticale analyse van de tekst Kenmerken van schrijfstijl (features) uit de tekst halen &amp; de meest informatieve kiezen Trainingsfase: profiel (model) bouwen van schrijfstijl van potentiële auteurs Testfase: automatisch identificeren wie de auteur is van een voorheen ongeziene tekst = text categorization Computationele benadering Outline Introduction Dissertation focus Scalability issues Experimental design in multi-topic attribution Author set size Data size Conclusions &amp; further research Dissertation focus Focus on scalability Limitations of current research topic influence in the attribution model (the effect of topic) small set of candidate authors (author set size) large sets of training data (data size) Is text categorization approach applicable on a large scale? Scalability = the ability to perform consistently when confronted with various uncontrolled settings In short text authorship attribution (~ e-mail length) Large-scale application Traditional data &amp; problems e.g. book, play limited set of candidate authors &amp; a lot of training data strictly controlled cases: age, gender, genre, ... ‘New’ data &amp; problems e.g. e-mail fraud, alleged suicide note, threat letters large sets of candidate authors &amp; often short texts uncontrolled cases! +95% ? Data sets Main perspectives on authorship attribution statistical analysis lexical features  understanding style interpretability Dissertation ‘style’ Limitations of current research no clear description of experimental design or data sets underuse of benchmark data sets no feature evaluation Join strengths of DH &amp; CL replicability: benchmark data sets &amp; thorough design interpretability: in-depth feature analysis The effect of topic Why is topic a concern? Topic is hard to ‘separate’ from authorship It influences the classifier, for better or worse General apprehension about topic “yes, we actually do joint author-topic attribution” ‘safe’ way out: restrict to function words or characters Q: How big is the influence of topic? Q: How can we rule out topic influence? Topic influence How complex is multi-topic authorship attribution? Various cross-validation schemes stratified held-out topic: training on all-but-one topics, testing on remaining topic single-topic: #tasks = #topics Performance: severe fluctuations depending on focus topic! Topic variation Held-out topic: inter-topic how difficult is a topic to learn?  Single-topic: intra-topic topic homogeneity? high low How can we use any type of features and not risk scalability? Various feature selection methods frequency strata (Burrows, 2002) Information Gain (IG) chi-squared (χ²) Performance: Highest in IG Features: ‘Unique identifiers’ of topic Ruling out topic Feature categories Typos &amp; spelling variation Hodstafer, full-fill NEs Eliot, Philippines Topic markers Frontiersman, workaholic  Function words the, to, but Author-specific words ‘General purpose’ words make, ask bad good  70% reduction effective =/+ performance topicF = 1 topicF &gt; 1 Author set size ML: The more classes, the more difficult the task becomes A lot of studies claim reliability of their approach tested on only one data set small set of candidate authors (&lt; 10) Q: do these studies overestimate the viability of their approach in terms of performance &amp; features? Research questions     Performance Consistent decay ➟ performance is low But unpredictable ➟ approach is not scalable Feature reliability Can we use the individual features extracted from a small set of candidate authors (did we learn anything?) to map larger sets of candidate authors? additional candidate authors bring in so much variation that the individual features are swamped to map other sets of candidate authors? (author pairs) hardly any overlap in features! ➟ Data size ‘No data like more data’ (Moore: 2001) How about limited data? e.g. a few vs. a lot of e-mails, blog posts, tweets  Q: How scalable is our text categorization approach? Q: Robustness in feature types? in document representation approaches? in Machine Learners? Research questions Performance: dramatic drop in accuracy Is the trend the same for every authorship class?       Effect of limited data Features: character n-grams are robust to limited data Document representation instance-based vs. profile-based profile-based is more robust Machine Learning algorithms eager learner SVM vs. lazy MBL SVM better at dealing with sparse data Robustness Conclusions&amp; Further research Stress-tested text categorization approach Analysis in terms of performance &amp; features Very sensitive to variations in number of topics &amp; topic variation author set size data size ! only the tip of the iceberg ! Conclusions Inherent complexity of a task consistency in writing style over different topics comparability between authorship classes over various topics presence of different genres presence of stylistic choices in short text fragments stylistic maturity of the author ...  Other factors in play Authorship verification task Did any of the authors write the text? One-class learning Ensemble methods: combining predictions from different classifiers Large-scale application in blogs, chat, ... Inherent complexity of a task Future research Thank you!"/>
+  <script type="text/javascript" language="javascript">
+//      <![CDATA[
+            var images = new Array (33);
+            images[0] = "PhD-Defense/defense-final.001.png";
+            images[1] = "PhD-Defense/defense-final.002.png";
+            images[2] = "PhD-Defense/defense-final.003.png";
+            images[3] = "PhD-Defense/defense-final.004.png";
+            images[4] = "PhD-Defense/defense-final.005.png";
+            images[5] = "PhD-Defense/defense-final.006.png";
+            images[6] = "PhD-Defense/defense-final.007.png";
+            images[7] = "PhD-Defense/defense-final.008.png";
+            images[8] = "PhD-Defense/defense-final.009.png";
+            images[9] = "PhD-Defense/defense-final.010.png";
+            images[10] = "PhD-Defense/defense-final.011.png";
+            images[11] = "PhD-Defense/defense-final.012.png";
+            images[12] = "PhD-Defense/defense-final.013.png";
+            images[13] = "PhD-Defense/defense-final.014.png";
+            images[14] = "PhD-Defense/defense-final.015.png";
+            images[15] = "PhD-Defense/defense-final.016.png";
+            images[16] = "PhD-Defense/defense-final.017.png";
+            images[17] = "PhD-Defense/defense-final.018.png";
+            images[18] = "PhD-Defense/defense-final.019.png";
+            images[19] = "PhD-Defense/defense-final.020.png";
+            images[20] = "PhD-Defense/defense-final.021.png";
+            images[21] = "PhD-Defense/defense-final.022.png";
+            images[22] = "PhD-Defense/defense-final.023.png";
+            images[23] = "PhD-Defense/defense-final.024.png";
+            images[24] = "PhD-Defense/defense-final.025.png";
+            images[25] = "PhD-Defense/defense-final.026.png";
+            images[26] = "PhD-Defense/defense-final.027.png";
+            images[27] = "PhD-Defense/defense-final.028.png";
+            images[28] = "PhD-Defense/defense-final.029.png";
+            images[29] = "PhD-Defense/defense-final.030.png";
+            images[30] = "PhD-Defense/defense-final.031.png";
+            images[31] = "PhD-Defense/defense-final.032.png";
+            images[32] = "PhD-Defense/defense-final.033.png";
+            var index = 0;
+            function WindowLoaded(evt)
+            {
+                document.body.onselectstart = function () { return false; };
+            }
+            function Step(i)
+            {
+                GoTo(index + i)
+            }
+            function GoTo(newIndex)
+            {
+                if(newIndex >= 0 && newIndex < images.length)
+                {
+                    index = newIndex;
+                    document.Slideshow.src = images[index];
+                }
+            }
+//      ]]>
+    </script>
+  <link rel="shortcut icon" href="6.png" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="css/web.css">
+ </head>
+
+<body>
+  <div id="header">
+    <br>
+    <table align="center">
+      <tr>
+        <td>
+          <img src="images/KimLuyckx-2013.jpg" height="140px" 
+align="left">
+        </td>
+        <td>
+          <div class="pic">
+          </div>
+        </td>
+        <td>
+	      <h1 align="left">dr. Kim Luyckx</h1>
+          <h3 align="left">Text mining, computational linguistics, machine learning</h3>
+        </td>
+      </tr>
+      <tr>
+      	<td></td>
+      	<td></td>
+        <td>
+          <ul id="nav">
+            <li id="start"><a href="index.php" class="without_u"><img src="icons/Home.png"> Home</a></li>
+            <li id="defense" class="active"><a href="#" class="without_u"><img src="6.png"> <br>PhD defense</a></li>
+<!--            <li id="phd" class="active"><a href="#" class="without_u"><img src="icons/target.png"> <br>PhD research</a></li>-->
+			<li></li>
+            <li id="events"><a href="events.php" class="without_u"><img src="icons/Web.png"> News</a></li>
+<!--            <li id="research"><a href="research.php" class="without_u"><img src="icons/penFolder.png"> Interests</a></li>-->
+<!--            <li id="demo"><a href="demo.php" class="without_u"><img src="icons/computer_process.png"> Demo</a></li>-->
+            <li id="corpus"><a href="Personae.php" class="without_u"><img src="icons/Download.png"> Corpus</a></li>
+            <li id="pubs"><a href="publications.php" class="without_u"><img src="icons/LibraryFolder.png"> Publications</a></li>
+            <li id="talks"><a href="talks.php" class="without_u"><img src="icons/presentation.png"> Presentations</a></li>
+		    <li id="contact"><a href="contact.php" class="without_u"><img src="icons/Char.png"> Contact</a></li>
+     </ul>
+        </td>
+      </tr>
+    </table>
+  </div>
+
+  <br>
+  <div id="content">
+    
+	<h2>PhD dissertation "Scalability Issues in Authorship Attribution"</h2>
+    <p><a href="docs/abstract_PhD-KimLuyckx.pdf">Abstract (in English)</a> or <a href="docs/samenvatting_PhD-KimLuyckx.pdf">Samenvatting (in Dutch)</a><br>
+	If you want a copy of the dissertation, just send me an e-mail.</p>
+  	<p>Proefschrift voorgelegd tot het behalen van de graad van doctor in de Taalkunde aan de Universiteit Antwerpen<br>
+   	<i>Dissertation presented to the jury in order to obtain the academic degree of PhD in Linguistics at the University of Antwerp</i></p>
+    <p>by <b><a href="index.php">Kim Luyckx</a></b></p>
+
+    
+	<div bgcolor="black" width="45%" align="center" hspace=20 onload='WindowLoaded(event);'>
+        <img height="300px" name="Slideshow" alt="" src="PhD-Defense/defense-final.001.png" onclick="Step(1)"/>
+        <br/>
+        <br/>
+        <input type="image" src="PhD-Defense/home.png" onclick="GoTo(0)"/>
+        &nbsp;&nbsp;&nbsp;
+        <input type="image" src="PhD-Defense/prev.png" onclick="Step(-1)"/>
+        <input type="image" src="PhD-Defense/next.png" onclick="Step(1)"/>
+	</div>
+   	
+	<img width="15%" src="6.png" align="left" hspace=20>
+	<h2>PhD dissertation "Scalability Issues in Authorship Attribution"</h2>
+	<p><b>Tuesday 7 December 2010, 3PM</b><br>
+	<b>Promotiezaal Grauwzustersklooster</b>, Lange Sint-Annastraat 7, 2000 Antwerp (Belgium) <a href="map.pdf">[campus map</a>; <a href="http://www.ua.ac.be/main.aspx?c=.ROUTEDESCRIPTION&n=78620">directions</a>]</p>
+
+	<p>Jury: <a href="http://www.ualberta.ca/~baayen/">Harald Baayen</a> (University of Alberta, Canada), <a href="http://www.icsd.aegean.gr/lecturers/Stamatatos/">Efstathios Stamatatos</a> (University of the Aegean, Samos, Greece), <a 
+href="http://webs.hogent.be/~vhos368/">V&eacute;ronique Hoste</a> (Hogeschool Gent), <a href="http://www.clips.ua.ac.be/~gillis">Steven Gillis</a> (UA), <a href="http://www.clips.ua.ac.be/people/dominiek-sandra">Dominiek Sandra</a> (president of the jury), <a 
+href="http://www.clips.ua.ac.be/~walter">Walter Daelemans</a> (promotor, UA)</p>
+
+   	<p>At the start of the defense, I will give a 30-minute presentation about my dissertation. The defense will be followed by a <b>reception</b>, to which you are also kindly invited.</p>
+   	
+   	<p>The defense is public. Please send an e-mail to <a href="mailto:kim.luyckx@ua.ac.be">kim.luyckx@ua.ac.be</a> to confirm your presence (by 1 December).
+   	<br>
+
+</div>
+  <div id="content">
+   	<hr>
+   	
+   	<h2>Invited talks by Harald Baayen and Efstathios Stamatatos [CLiPS-CLIF colloquium]</h2>
+    
+    <p><b>Monday 6 December 2010, 2PM</b><br>
+    <b>E 201, Prinsstraat 13, 2000 Antwerp (Belgium)</b> <a href="map.pdf">[campus map</a>; <a href="http://www.ua.ac.be/main.aspx?c=.ROUTEDESCRIPTION&n=78620">directions</a>]</p>
+    
+    <h3>2 PM: Harald Baayen on <i>Exploring the potential of naive discriminative learning for the analysis of (psycho)linguistic data</i></h3>
+    <p>In 1972, Rescorla and Wagner formulated recurrence equations for human and animal learning that have proved to be surprisingly fruitful in psychology.  Danks (2003) introduced a technical innovation that makes it possible to very efficiently estimate the state of the learning system when it is in equilibrium.  In my presentation, I will two present examples demonstrating that Rescorla-Wagner-Danks discriminative learning has much to offer for linguistic and psycholinguistic modelling as well as data analysis. </p>
+
+	<p>First, I will introduce a computational model predicting lexical decision latencies for visual comprehension based on naive discriminative learning.  The model is very sparse in free parameters, yet explains a wide range of empirical findings, including whole-word and phrasal frequency effects, without having to posit separate representations for complex words or phrases.  In other words, the model combines excellent predictions with extreme representational parsimony.</p>
+
+	<p>Second, I will discuss examples where naive discriminative learning appears to out-perform logistic mixed models fitted to the same data.  Furthermore, naive discriminative learning provides the researcher with sufficient detail to pinpoint a potential weakness of the mixed-effect regression modeling approach.  For the data set examined thus far in this line of research, it seems that naive discriminative learning has potential to be developed into a  statistical tool complementing other classifiers such as logistic and polytomous mixed-effects models, random forests, and nearest-neighbor based methods.</p>
+	
+	<p>Please register <a href="http://www.clips.ua.ac.be/colloquia/Harald-Baayen">here</a></p>
+
+    <h3>3:30 PM: Efstathios Stamatatos on <i>Classification Methods in Modern Authorship Analysis</i></h3>
+    <p>During the last decade, text categorization has been substantially developed providing effective methods able to deal with thousands of documents and multiple categories. Beyond topic, style can also be used as a discriminator factor. Authorship analysis deals with the personal style of the authors of electronic documents. Typical authorship analysis tasks include authorship attribution (a text of unknown authorship is assigned to one candidate author, given a set of candidate authors for whom text samples of undisputed authorship are available), authorship verification (to decide whether a given text was written by a certain author or not), and author profiling (to extract information about the age, education, sex, etc. of the author of a given text). According to the properties of a particular application, a specific setting of text categorization task has to be defined: single-label vs. multi-label classification, hierarchical vs. flat classification, closed-set vs. open-set classification. In this presentation, we examine the main classification paradigms for style-based text categorization focusing on how they treat the writing style: cumulatively for each class or individually for each document. In more detail, we distinguish two main approaches: (i) Profile-based paradigm aiming at extracting only one representation vector per author and (ii) Instance-based paradigm aiming at extracting one representation vector per document. Several state-of-the-art methods are examined and a detailed comparison is provided based on factors such as the type of representation they can handle, the required computational time cost, the ability to handle short texts and imbalanced training data, etc. suggesting their suitability for certain authorship analysis problems.</p>
+  
+	<p>Please register <a href="http://www.clips.ua.ac.be/colloquia/Efstathios-Stamatatos">here</a></p>
+	<br>
+	<p>Sponsored by <a href="http://clif.esat.kuleuven.be">CLiF</a>, the scientific research community for Computational Linguistics and Language Technology.</p>
+	<img src="colloquia/clif_logo.jpg">
+ 	
+   <div id="footer">
+   Image design by <a href="http://organisms.be/index.php/Home">Tom De Smedt</a> (<a href="http://nodebox.net">Nodebox</a>)
+   </div>
+   
+</div>
+
+<h3> </h3>
+<script src="http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-455306-1";
+urchinTracker();
+</script>
+
+</body>
+</html>
